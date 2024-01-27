@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escalas Termométicas</title>
+    <link rel="stylesheet" href="thermometricScales.css">
+</head>
+<body>
+    <main>
+    <div class="container">
+    <h1>Escalas Termométricas</h1>
+    <section class="containerItems">
+    <select id="select1">
+        <option value="" class="option" disabled selected>Seleciona uma escala</option>
+        <option value="celsius" class="option">Celsius</option>
+        <option value="kelvin" class="option">Kelvin</option>
+        <option value="fahrenheit" class="option">Fahrenheit</option>
+    </select>
+    <input type="number" value="" id="input" placeholder="Quantos graus?"/>
+
+    <select id="select2">
+        <option value="" class="option" disabled selected>Converter para</option>
+        <option value="celsius" class="option">Celsius</option>
+        <option value="kelvin" class="option">Kelvin</option>
+        <option value="fahrenheit" class="option">Fahrenheit</option>
+    </select>
+
+    <button type="submit" id="btn">Converter</button>
+</section>
+
+    <section class="secParagraph">
+        <strong>
+            <p class="paragraph" id="content"></p>
+        </strong>
+        <p class="paragraph" id="account"></p>
+    </section>
+    </div>
+    </main>
+    <script src="thermometricScales.js"></script>
+</body>
+</html>
