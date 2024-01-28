@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+body {
+    font-family: Karla, Arial, Helvetica, sans-serif;
+    margin: 0;
+    position: fixed;
+}
+input, button {
+    font-family: Karla, Arial, Helvetica, sans-serif;
+}
+/* first mobile */
+section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #121212;
+}
+.container {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    background-color: #242424;
+    box-shadow: 0 0 4px #fff;
+}
+section h1 {
+    font-size: 2rem;
+    margin: 0 0 12px 0;
+    text-align: center;
+    color: #0092ce;
+}
+input[type="number"] {
+    margin-bottom: 12px;
+    padding: 12px;
+    font-size: 1rem;
+    border: none; 
+}
+#btnDraw {
+    padding: 12px;
+    /* background-color: #0092ce; */
+    border: none;
+    color: #0092ce;
+    font-size: 1.5rem;
+    border: none;
+    background-color: transparent;
+    background-color: #0092ce;
+    color: #fff;
+    transition: all .4s;
+}
+#btnDraw:hover {
+    background-color: #02628a;
+}
+#res {
+    display: none; /* inicial state */
+}
+#res {
+    color: #fff;
+    text-align: center;
+    margin-top: 12px;
+    font-size: 2rem;
+    padding: 6px;
+}
+@media (728px <= width <= 1151px){
+    .container {
+        width: 40%;
+    }
+}
+@media (min-width: 1152px){
+    .container {
+        width: 30%;
+    }
+}
+@media (max-width: 480px) {
+    .container {
+        overflow-y: scroll;
+    }
+}
