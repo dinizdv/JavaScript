@@ -7,7 +7,7 @@ document.querySelector('#btnDraw').addEventListener('click', () => {
     if (min === "" || max === "") {
         alert('The inputs are empty.')
     } else if (min > limit || max > limit){
-        alert('The number is greater.')
+        alert('The number is large.')
     }
 
     // Math.floor -> rounds to the lowest int number: ex -> 4.6 = 5; 9.3 = 9
